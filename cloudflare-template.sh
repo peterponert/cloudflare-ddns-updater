@@ -1,12 +1,23 @@
 #!/bin/bash
+##
 ## DDNS WebHook / Cloudflare API DNS Record Updater
+##
+## DESRIPTION:
+## BASH Script to send current determined Public IP address to 
 
-## !!!!!! Refactor based off https://github.com/K0p1-Git/cloudflare-ddns-updater   (Work in progress)
+## REQUIREMENTS:
+## jq, dig
 
+## CREDITS:
+## - Refactor based off https://github.com/K0p1-Git/cloudflare-ddns-updater   (Work in progress)
 
+## NOTES:
+#############################################################################################
 ## change to "bin/sh" when necessary
 ## requires jq installed
 ## Use: log show --predicate 'process == "logger"' --last 5m   (On macOS)
+
+
 
 ## Cloudflare Info:
 auth_email="@gmail.com"                             # The email used to login 'https://dash.cloudflare.com'
